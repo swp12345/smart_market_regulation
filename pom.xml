@@ -42,7 +42,6 @@
         <module>swkj-special-equipment-management</module>
         <module>swkj-License-validity-period</module>
         <module>swkj-admin</module>
-        <module>mylife</module>
     </modules>
 
     <dependencies>
