@@ -1,0 +1,33 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/bd_mrs?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&nullCatalogMeansCurrent=true
+  redis:
+    host: 192.168.1.111
+    port: 6379
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.swkj.smart.market.regulation.model
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+jwt:
+  config:
+    key: swkj
+    tti: 900000
+accountSid: 8a216da86d05dc0b016d1a3b6b100a64
+accountToken: 8fd4e091bf784dc2b6aa3564c07853c4
+appId: 8a216da86d05dc0b016d1a3b6b620a6a
+templateId: 486085
+
+logging:
+  level:
+    io:
+      swagger:
+        models:
+          parameters:
+            AbstractSerializableParameter: error

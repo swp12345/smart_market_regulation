@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mylife" />
+        <module name="fastdfs-client-java" />
+        <module name="swkj-centralized-dining-management" />
+        <module name="swkj-sysmanage" />
+        <module name="swkj-common-api" />
+        <module name="swkj-admin" />
+        <module name="swkj-special-equipment-management" />
+        <module name="swkj-License-validity-period" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fastdfs-client-java" target="1.6" />
+      <module name="mylife" target="11" />
+      <module name="smart_market_regulation" target="11" />
+      <module name="swkj-admin" target="11" />
+      <module name="swkj-centralized-dining-management" target="11" />
+      <module name="swkj-common-api" target="11" />
+      <module name="swkj-License-validity-period" target="11" />
+      <module name="swkj-special-equipment-management" target="11" />
+      <module name="swkj-sysmanage" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mylife" options="-parameters" />
+      <module name="swkj-License-validity-period" options="-parameters" />
+      <module name="swkj-admin" options="-parameters" />
+      <module name="swkj-centralized-dining-management" options="-parameters" />
+      <module name="swkj-common-api" options="-parameters" />
+      <module name="swkj-special-equipment-management" options="-parameters" />
+      <module name="swkj-sysmanage" options="-parameters" />
+    </option>
+  </component>
+</project>

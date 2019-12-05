@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swkj.smart.market.regulation.sysmanage.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swkj.smart.market.regulation.model.SysUser">
+    <result column="id" property="id" />
+        <result column="user_no" property="userNo"/>
+        <result column="username" property="username" />
+        <result column="user_age" property="userAge" />
+        <result column="gender" property="gender" />
+        <result column="dept_id" property="deptId" />
+        <result column="email" property="email" />
+        <result column="mobile" property="mobile" />
+        <result column="avatar" property="avatar" />
+        <result column="status" property="status" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="last_update_by" property="lastUpdateBy" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="attribute_01" property="attribute01" />
+        <result column="attribute_02" property="attribute02" />
+        <result column="attribute_03" property="attribute03" />
+        <result column="attribute_04" property="attribute04" />
+        <result column="attribute_05" property="attribute05" />
+        <result column="attribute_06" property="attribute06" />
+        <result column="attribute_07" property="attribute07" />
+        <result column="attribute_08" property="attribute08" />
+        <result column="attribute_09" property="attribute09" />
+        <result column="attribute_10" property="attribute10" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        u.id,u.user_no,u.username,d.dept_name,u.mobile,u.status,DATE_FORMAT(u.create_time,'%Y-%m-%d %H:%i:%s') as create_time
+    </sql>
+    <select id="findAll" resultType="java.util.Map">
+        select <include refid="Base_Column_List"/> from sys_user u left join sys_dept d on u.dept_id = d.id
+        <where>
+            <if test="userNo != null">
+                user_no = #{userNo}
+            </if>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="startCreateTime != null and endCreateTime != null">
+                and create_time gt;= #{startCreateTime}and create_time lt;= #{endCreateTime}
+            </if>
+        </where>
+    </select>
+    <select id="findUserByNo" resultType="com.swkj.smart.market.regulation.model.SysUser">
+        select *  from sys_user where user_no = #{userNo};
+    </select>
+    <select id="findUserByMobile" resultType="com.swkj.smart.market.regulation.model.SysUser">
+        select * from sys_user where mobile = #{mobile};
+    </select>
+</mapper>

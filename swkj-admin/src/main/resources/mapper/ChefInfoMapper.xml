@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swkj.smart.market.regulation.dining.mapper.ChefInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swkj.smart.market.regulation.model.ChefInfo">
+        <result column="id" property="id" />
+        <result column="chef_id" property="chefId" />
+        <result column="chef_name" property="chefName" />
+        <result column="gender" property="gender" />
+        <result column="phone" property="phone" />
+        <result column="register_date" property="registerDate" />
+        <result column="chef_group_id" property="chefGroupId" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="last_update_by" property="lastUpdateBy" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="status" property="status" />
+        <result column="health_code" property="healthCode" />
+        <result column="position" property="position" />
+        <result column="attribute_04" property="attribute04" />
+        <result column="attribute_05" property="attribute05" />
+        <result column="attribute_06" property="attribute06" />
+        <result column="attribute_07" property="attribute07" />
+        <result column="attribute_08" property="attribute08" />
+        <result column="attribute_09" property="attribute09" />
+        <result column="attribute_10" property="attribute10" />
+        <result column="attribute_11" property="attribute11" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        chef_id, chef_name, gender, phone, register_date, chef_group_id, create_by, create_time, last_update_by, last_update_time, status, health_code, position, attribute_04, attribute_05, attribute_06, attribute_07, attribute_08, attribute_09, attribute_10, attribute_11
+    </sql>
+    <select id="selectRecordsByDate" parameterType="com.swkj.smart.market.regulation.dto.DateDTO" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from chef_info
+        <trim prefix="WHERE" prefixOverrides="AND">
+            <if test="name!=null and name != ''">
+                chef_name like "%"#{name}"%"
+            </if>
+            <if test="startDate!=null">
+                <![CDATA[   and DATE_FORMAT(register_date, '%Y-%m-%d')>=  DATE_FORMAT(#{startDate}, '%Y-%m-%d')   ]]>
+            </if>
+            <if test="endDate!=null">
+                <![CDATA[  and DATE_FORMAT(register_date, '%Y-%m-%d') <= DATE_FORMAT(#{endDate}, '%Y-%m-%d')    ]]>
+            </if>
+        </trim>
+    </select>
+</mapper>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="28c2d0c1-0640-4ab3-afee-7b09a2f3dcb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mylife/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylife/src/main/java/controller/EquipmentInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylife/src/main/java/mapper/EquipmentInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylife/src/main/java/service/EquipmentInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mylife/src/main/java/service/impl/EquipmentInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swkj-admin/src/main/resources/mapper/EquipmentInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-admin/src/main/resources/mapper/SpecialEquipmentInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-admin/src/main/resources/mapper/SpecialEquipmentInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-admin/src/main/resources/mapper/SpecialEquipmentMaintainMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-admin/src/main/resources/mapper/SpecialEquipmentMaintainMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-common-api/src/main/java/com/swkj/smart/market/regulation/model/SpecialEquipmentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-common-api/src/main/java/com/swkj/smart/market/regulation/model/SpecialEquipmentInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-common-api/src/main/java/com/swkj/smart/market/regulation/model/SpecialEquipmentMaintain.java" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-common-api/src/main/java/com/swkj/smart/market/regulation/model/SpecialEquipmentMaintain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/controller/SpecialEquipmentInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/controller/SpecialEquipmentInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/controller/SpecialEquipmentMaintainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/controller/SpecialEquipmentMaintainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/mapper/SpecialEquipmentInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/mapper/SpecialEquipmentInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/service/SpecialEquipmentInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/service/SpecialEquipmentInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/service/impl/SpecialEquipmentInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/swkj-special-equipment-management/src/main/java/com/swkj/smart/market/regulation/equipment/service/impl/SpecialEquipmentInfoServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="smart_market_regulation" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="SWP" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UHg7yoGXOjAvQulb6NYB0yezUn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SmartMarketRegulationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.swkj.smart.market.regulation.SmartMarketRegulationApplication" />
+      <module name="swkj-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.swkj.smart.market.regulation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SmartMarketRegulationApplication" />
+        <item itemvalue="Application.SmartMarketRegulationApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28c2d0c1-0640-4ab3-afee-7b09a2f3dcb7" name="Default Changelist" comment="" />
+      <created>1575018770380</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575018770380</updated>
+    </task>
+    <task id="LOCAL-00001" summary="新增设备信息以及维修信息  参数的修改">
+      <created>1575249110603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575249110603</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="新增设备信息以及维修信息  参数的修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增设备信息以及维修信息  参数的修改" />
+  </component>
+</project>

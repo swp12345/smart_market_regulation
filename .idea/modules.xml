@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" filepath="$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylife/mylife.iml" filepath="$PROJECT_DIR$/mylife/mylife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart_market_regulation.iml" filepath="$PROJECT_DIR$/smart_market_regulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swkj-License-validity-period/swkj-License-validity-period.iml" filepath="$PROJECT_DIR$/swkj-License-validity-period/swkj-License-validity-period.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swkj-admin/swkj-admin.iml" filepath="$PROJECT_DIR$/swkj-admin/swkj-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swkj-centralized-dining-management/swkj-centralized-dining-management.iml" filepath="$PROJECT_DIR$/swkj-centralized-dining-management/swkj-centralized-dining-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swkj-common-api/swkj-common-api.iml" filepath="$PROJECT_DIR$/swkj-common-api/swkj-common-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swkj-special-equipment-management/swkj-special-equipment-management.iml" filepath="$PROJECT_DIR$/swkj-special-equipment-management/swkj-special-equipment-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swkj-sysmanage/swkj-sysmanage.iml" filepath="$PROJECT_DIR$/swkj-sysmanage/swkj-sysmanage.iml" />
+    </modules>
+  </component>
+</project>

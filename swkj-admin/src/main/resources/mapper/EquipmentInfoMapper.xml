@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.EquipmentInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swkj.smart.market.regulation.model.SpecialEquipmentInfo">
+        <result column="id" property="id" />
+        <result column="e_id" property="eId" />
+        <result column="e_name" property="eName" />
+        <result column="address" property="address" />
+        <result column="product_date" property="productDate" />
+        <result column="release_date" property="releaseDate" />
+        <result column="owner_name" property="ownerName" />
+        <result column="register_date" property="registerDate" />
+        <result column="qualification_imag" property="qualificationImag" />
+        <result column="status" property="status" />
+        <result column="manufacturer" property="manufacturer" />
+        <result column="owner_phone" property="ownerPhone" />
+        <result column="is_enabled" property="isEnabled" />
+        <result column="Equipment_id" property="EquipmentId" />
+        <result column="create_by" property="createBy"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_update_by" property="lastUpdateBy"/>
+        <result column="last_update_time" property="lastUpdateTime"/>
+    </resultMap>
+
+    <select id="selectByEidEquipmentInfo" resultType="java.util.Map">
+        SELECT
+        s.e_id,
+        s.e_name,
+        s.address,
+        s.equipment_id,
+        s.STATUS,
+        s.release_date,
+        s.product_date,
+        s.manufacturer,
+        s.register_date,
+        m.member_area,
+        m.maintenance_type,
+        m.maintenance_phone,
+        m.maintenance_person,
+        m.maintain_result,
+        m.maintain_content,
+        m.maintenancelose_date,
+        TO_DAYS( m.maintain_date - INTERVAL 365 DAY ) - TO_DAYS( NOW( ) ) AS warningDay
+        FROM
+        special_equipment_info s
+        LEFT JOIN special_equipment_maintain m ON s.e_id = m.e_id
+        WHERE
+        s.e_id = #{eId}
+    </select>
+</mapper>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swkj.smart.market.regulation.equipment.mapper.SpecialEquipmentMaintainMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swkj.smart.market.regulation.model.SpecialEquipmentMaintain">
+        <result column="id" property="id"/>
+        <result column="e_id" property="eId"/>
+        <result column="unit_id" property="unitId"/>
+        <result column="maintain_content" property="maintainContent"/>
+        <result column="maintain_result" property="maintainResult"/>
+        <result column="maintain_date" property="maintainDate"/>
+        <result column="maintenance_type" property="maintenanceType"/>
+        <result column="maintenancelose_date" property="maintenanceloseDate"/>
+        <result column="detection_image" property="detectionImage"/>
+        <result column="maintenance_person" property="maintenancePerson"/>
+        <result column="maintenance_phone" property="maintenancePhone"/>
+        <result column="member_area" property="memberArea"/>
+        <result column="create_by" property="createBy"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_update_by" property="lastUpdateBy"/>
+        <result column="last_update_time" property="lastUpdateTime"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id
+        e_id
+        unit_id
+        maintain_content
+        maintain_result
+        maintain_date
+        create_by
+        create_time
+        last_update_by
+        last_update_time
+        maintenance_type
+        maintenancelose_date
+        detection_image
+        maintenance_person
+        maintenance_phone
+        member_area
+    </sql>
+
+    <select id="findAllInfo" resultType="java.util.Map">
+        select
+        main.id,
+        info.e_id,
+        info.address,
+        info.e_type,
+        info.manufacturer,
+        info.status,
+        info.register_date,
+        main.maintenance_type,
+        main.maintain_date,
+        TO_DAYS((maintain_date + INTERVAL 365 DAY)) - TO_DAYS(now()) as next_days,
+        main.unit_name,
+        main.create_time
+        from special_equipment_maintain main left join special_equipment_info info on main.e_id=info.e_id
+    </select>
+    <select id="findByIdEquipmentMaintain" resultType="java.util.Map">
+        SELECT i.e_id,i.e_type,i.manufacturer,i.equipment_id,i.construction_organization,i.create_time,i.address,i.STATUS, m.maintenance_type,
+        m.maintenance_person,m.maintain_date,  m.contact_information,m.maintain_content,m.unit_name,m.unit_id
+        FROM
+        special_equipment_info i,special_equipment_maintain m where i.e_id = m.e_id and m.id = #{id}
+    </select>
+
+    <select id="findWaringInfo" resultType="java.util.Map">
+        select
+        main.id,
+        info.e_id,
+        info.e_type,
+        info.register_date,
+        info.manufacturer,
+        info.status,
+        main.maintenance_type,
+        main.maintain_date,
+        TO_DAYS((maintain_date + INTERVAL 365 DAY)) - TO_DAYS(now()) as next_days,
+        main.unit_name,
+        main.create_time
+        from special_equipment_maintain main left join special_equipment_info info on main.e_id=info.e_id
+        <trim prefix="WHERE" prefixOverrides="AND">
+            <if test="startDate!=null">
+                <![CDATA[   and DATE_FORMAT(main.maintain_date, '%Y-%m-%d')>=  DATE_FORMAT(#{startDate}, '%Y-%m-%d')   ]]>
+            </if>
+            <if test="endDate!=null">
+                <![CDATA[  and DATE_FORMAT(main.maintain_date, '%Y-%m-%d') <= DATE_FORMAT(#{endDate}, '%Y-%m-%d')    ]]>
+            </if>
+        </trim>
+    </select>
+</mapper>

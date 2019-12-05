@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swkj.smart.market.regulation.sysmanage.mapper.SysDeptMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swkj.smart.market.regulation.model.SysDept">
+        <id column="id" property="Id" />
+        <result column="parent_id" property="parentId" />
+        <result column="dept_no" property="deptNo" />
+        <result column="dept_name" property="deptName" />
+        <result column="order_num" property="orderNum" />
+        <result column="leader" property="leader" />
+        <result column="phone" property="phone" />
+        <result column="status" property="status" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, parent_id, dept_no, dept_name, order_num, leader, phone, status, create_by, create_time, update_by, update_time
+    </sql>
+    <select id="findDeptByUser" resultType="com.swkj.smart.market.regulation.model.SysDept">
+        select d.* from sys_dept d,sys_user u where u.dept_id = d.id and u.id = #{userId};
+    </select>
+
+</mapper>

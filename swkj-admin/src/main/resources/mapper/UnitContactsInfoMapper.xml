@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swkj.smart.market.regulation.sysmanage.mapper.UnitContactsInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swkj.smart.market.regulation.model.UnitContactsInfo">
+    <result column="id" property="id" />
+        <result column="contact_name" property="contactName" />
+        <result column="card_id" property="cardId" />
+        <result column="gender" property="gender" />
+        <result column="duty" property="duty" />
+        <result column="m_phone" property="mPhone" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="last_update_by" property="lastUpdateBy" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="attribute_01" property="attribute01" />
+        <result column="attribute_02" property="attribute02" />
+        <result column="attribute_03" property="attribute03" />
+        <result column="attribute_04" property="attribute04" />
+        <result column="attribute_05" property="attribute05" />
+        <result column="attribute_06" property="attribute06" />
+        <result column="attribute_07" property="attribute07" />
+        <result column="attribute_08" property="attribute08" />
+        <result column="attribute_09" property="attribute09" />
+        <result column="attribute_10" property="attribute10" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        contact_name, card_id, gender, duty, m_phone, create_by, create_time, last_update_by, last_update_time, attribute_01, attribute_02, attribute_03, attribute_04, attribute_05, attribute_06, attribute_07, attribute_08, attribute_09, attribute_10
+    </sql>
+
+</mapper>
