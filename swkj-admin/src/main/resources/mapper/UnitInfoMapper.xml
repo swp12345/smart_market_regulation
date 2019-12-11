@@ -34,14 +34,4 @@
         unit_no, unit_name, unit_address, register_capital, register_date, business_scope, create_by, create_time, last_update_by, last_update_time, unit_image, attribute_01, attribute_02, attribute_03, attribute_04, attribute_05, attribute_06, attribute_07, attribute_08, attribute_09, attribute_10
     </sql>
 
-    <select id="selectUnitInfos" resultMap="BaseResultMap">
-        SELECT
-        u.unit_id,
-        u.unit_name,
-        u.manager_name,
-        u.register_date,
-        u.address
-        FROM
-        third_unit_info u
-    </select>
 </mapper>
