@@ -25,7 +25,7 @@
         <poi.version>3.17</poi.version>
         <bitwalker.version>1.19</bitwalker.version>
         <aliyun-sdk-core.version>3.7.0</aliyun-sdk-core.version>
-        <fastjson.version>1.2.58</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <fastdfs.version>1.27-SNAPSHOT</fastdfs.version>
     </properties>
 
