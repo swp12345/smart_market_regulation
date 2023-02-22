@@ -21,7 +21,7 @@
         <shiro-redis.version>3.1.0</shiro-redis.version>
         <jjwt.version>0.6.0</jjwt.version>
         <commons-lang3.version>3.9</commons-lang3.version>
-        <commons.fileupload.version>1.3.3</commons.fileupload.version>
+        <commons.fileupload.version>1.5</commons.fileupload.version>
         <poi.version>3.17</poi.version>
         <bitwalker.version>1.19</bitwalker.version>
         <aliyun-sdk-core.version>3.7.0</aliyun-sdk-core.version>
